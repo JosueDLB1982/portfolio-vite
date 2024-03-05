@@ -1,3 +1,4 @@
+import './css/normalize.css'
 import './style.css'
 import './css/style-button.css'
 
