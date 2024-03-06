@@ -1,4 +1,17 @@
 
+
+const link = document.createElement('a')
+export const downloadCv = () => {
+    const downloadBtn = document.querySelector('#download-btn')
+    downloadBtn.addEventListener('click', () => {
+        setTimeout(() => {
+            link.href = './assets/documents/cv-enero-2024.pdf'
+            link.download = 'Josue Lopez Frontend DEV'
+            link.click()
+        }, 3200);
+    })
+
+    
 document.querySelectorAll('.button').forEach(button => {
 
     let duration = 3000,
@@ -51,13 +64,11 @@ document.querySelectorAll('.button').forEach(button => {
           [3, 14],
           [8, 19],
           [21, 6]]);
-  
         }, duration / 2);
   
       }
   
     });
-  
   });
   
   function getPoint(point, i, a, smoothing) {
@@ -82,9 +93,10 @@ document.querySelectorAll('.button').forEach(button => {
     [4, 12],
     [12, update],
     [20, 12]],
-  
+        
+    
     d = points.reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '');
     return `<path d="${d}" />`;
   }
   //# sourceURL=pen.js
-      
+}
