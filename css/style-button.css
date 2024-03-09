@@ -1,60 +1,36 @@
+:root {
+  --arrow: rgb(15,13,13);
+  --checkmark: rgb(15,13,13);
+  --background: rgb(125, 125, 125);
+  --success: rgb(170, 170, 170);
+  --border: rgb(15, 13, 13);
+}
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --success: rgb(47, 53, 69);
+    --background: rgb(15, 13, 13);
+    --arrow: rgb(254, 254, 254);
+    --checkmark: rgb(254, 254, 254);
+      color-scheme: dark;
+  }
+}
 
-/* body {
-  min-height: 100vh;
-  display: flex;
-  font-family: "Roboto", Arial;
-  justify-content: center;
-  align-items: center;
-  background: #E4ECFA;
-} */
 body .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* body .container > div {
-    flex-basis: 100%;
-    width: 0;
-  } */
-  /* body .container .button {
-    margin: 16px;
-  } */
-  /* @media (max-width: 400px) {
-    body .container .button {
-      margin: 12px;
-    }
-  } */
-  /* body .dribbble {
-    position: fixed;
-    display: block;
-    right: 20px;
-    bottom: 20px;
-  } */
-  /* body .dribbble img {
-    display: block;
-    height: 28px;
-  } */
-  
-    .button.dark {
-      --background: rgb(17, 17, 17);
-      --rectangle: #1C212E;
-      --arrow: #F5F9FF;
-      --text: #F5F9FF;
-      --success: #2F3545;
-    }
-    
+     
     .button {
-      --checkmark: #fff;
-      --shadow: rgba(10, 22, 50, .24);
+      background: var(--background);
+      border: 1px solid var(--border);
       display: flex;
-      /* overflow: hidden; */
+      overflow: hidden;
       margin-top: 17px;
       text-decoration: none;
       -webkit-mask-image: -webkit-radial-gradient(white, black);
-      background: var(--background);
       border-radius: 8px;
-      box-shadow: 0 2px 8px -1px var(--shadow);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
     }
@@ -88,7 +64,6 @@ body .container {
       position: relative;
       width: 60px;
       height: 60px;
-      /* background: var(--rectangle); */
     }
     .button > div:before, .button > div:after {
       content: "";

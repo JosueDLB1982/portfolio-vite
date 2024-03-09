@@ -327,7 +327,7 @@ form {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: var(--bg-color-card);
   color: var(--color);
   box-shadow: 1px 1px 1px var(--color)
 }
@@ -343,26 +343,6 @@ form {
 
 .fi-rr-download {
   margin-right: 20px;
-}
-
-.download-btn {
-  border: 2px solid var(--bg-color-card);
-  display: inline-block;
-  font-size: 3vw;
-  width: 70vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
-  margin-bottom: 18px;
-  background-color: var(--bg-color-card);
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px var(--color)
-}
-
-.download-btn:hover {
-  box-shadow: -1px -1px 1px var(--color);
 }
 
 .footer {
