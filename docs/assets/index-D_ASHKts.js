@@ -250,7 +250,7 @@
 \r
 <section class="download-container">    \r
 <div class="container">\r
-  <a id="download-btn" class="button dark">\r
+  <a id="download-btn" class="button">\r
       <ul>\r
           <li>Descargar CV</li>\r
           <li>Descargando</li>\r
