@@ -265,19 +265,19 @@
 <footer class="footer">\r
   <div>\r
     <a href="https://github.com/JosueDLB1982" target="_blank">\r
-      <i class="fi fi-brands-github social-networks__icon"></i>\r
+      <i class="fa-brands fa-github social-networks__icon"></i>\r
     </a>\r
     <a href="https://www.instagram.com/josuedlopez1982/" target="_blank">\r
-      <i class="fi fi-brands-instagram social-networks__icon"></i>\r
+      <i class="fa-brands fa-instagram social-networks__icon"></i>\r
     </a>\r
     <a href="https://twitter.com/JosueLo68369645" target="_blank">\r
-      <i class="fi fi-brands-twitter-alt social-networks__icon"></i>\r
+      <i class="fa-brands fa-x-twitter social-networks__icon"></i>\r
     </a>\r
     <a href="https://web.facebook.com/JosueLopez1982" target="_blank">\r
-      <i class="fi fi-brands-facebook social-networks__icon"></i>\r
+      <i class="fa-brands fa-facebook social-networks__icon"></i>\r
     </a>\r
     <a href="https://www.linkedin.com/in/josue-lopez-7950b1228/" target="_blank">\r
-      <i class="fi fi-brands-linkedin social-networks__icon"></i>\r
+      <i class="fa-brands fa-linkedin social-networks__icon"></i>\r
     </a>\r
   </div>\r
   <p class="footer__text"><span>&copy; 2024 </span>Desarrollado por Josué López Frontend DEV</p>\r
