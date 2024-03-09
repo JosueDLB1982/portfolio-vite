@@ -355,7 +355,12 @@ form {
 
 .social-networks__icon {
   font-size: 24px;
-  margin: 5px;
+  margin: 8px 10px;
+  transition: 0.6s;
+}
+
+.social-networks__icon:hover {
+  transform: rotateY(360deg);
 }
 
 .footer__text {
