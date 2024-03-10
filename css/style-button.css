@@ -6,15 +6,13 @@
   --border: rgb(15, 13, 13);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  :root[data-theme='dark'] {
     --success: rgb(47, 53, 69);
     --background: rgb(15, 13, 13);
     --arrow: rgb(254, 254, 254);
     --checkmark: rgb(254, 254, 254);
       color-scheme: dark;
   }
-}
 
 body .container {
     display: flex;
@@ -44,7 +42,7 @@ body .container {
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: bold;
       line-height: 28px;
       color: var(--text);
     }
