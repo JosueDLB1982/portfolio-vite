@@ -1,7 +1,6 @@
 import html from './app.html?raw'
+import { setTheme } from './use-cases/colorSchemeSO'
 import { downloadCv } from './use-cases/download-cv'
-
-
 
 /**
  * 
