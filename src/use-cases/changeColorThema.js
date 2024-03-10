@@ -1,9 +1,9 @@
 
-const setDarkMode = () => {
+export const setDarkMode = () => {
     setUserTheme('dark')
 }
 
-const setLightMode = () => {
+export const setLightMode = () => {
     setUserTheme('light')
 }
 

@@ -1,6 +1,6 @@
 import html from './app.html?raw'
-import { setUserTheme } from '../src/use-cases/changeColorThema'
-// import { setTheme } from './use-cases/colorSchemeSO'
+import { setUserTheme, setDarkMode, setLightMode } from '../src/use-cases/changeColorThema'
+//import { setTheme } from './use-cases/colorSchemeSO'
 import { downloadCv } from './use-cases/download-cv'
 
 /**
@@ -15,7 +15,9 @@ export const App = (elementId) => {
 
     })()
 
+    //setTheme
     downloadCv()
     setUserTheme()
-    // setTheme()
+    setDarkMode()
+    setLightMode()
 }
