@@ -1,24 +1,27 @@
+export const setUserTheme = () => {
+    // verifica el color-scheme del SO y lo carga por defecto
+    const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)')
+    const setTheme = (newTheme) => {
+        document.documentElement.setAttribute('data-theme', newTheme)
+    }
+    if(isDarkTheme.matches){
+        setTheme('dark')
+    }
 
-export const setDarkMode = () => {
-    setUserTheme('dark')
-}
+    // detecta cambios en la configuración del color-scheme en el SO
+    isDarkTheme.addEventListener('change', (e) => {
+        setTheme(e.matches ? 'dark' : 'light')
+    })
 
-export const setLightMode = () => {
-    setUserTheme('light')
-}
-
-export const setUserTheme = (newTheme) => {
-    // referencias HTML
     const lightModeBtn = document.querySelector('.light-mode-btn')
     const darkModeBtn = document.querySelector('.dark-mode-btn')
-    
-    // listeners
+
+    // detecta los cambios a través de los botones de la página
     lightModeBtn.addEventListener('click', () => {
-        setDarkMode()
+        setTheme('dark')
     })
+
     darkModeBtn.addEventListener('click', () => {
-        setLightMode()
-    } )
-    // documentElement es el elemento rauz en el HTML, buscará el atributo indicado y aplicará el cambio
-    document.documentElement.setAttribute('data-theme', newTheme)
+        setTheme('light')
+    })
 }
