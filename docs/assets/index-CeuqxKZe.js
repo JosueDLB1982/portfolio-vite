@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const n of r)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&e(i)}).observe(document,{childList:!0,subtree:!0});function d(r){const n={};return r.integrity&&(n.integrity=r.integrity),r.referrerPolicy&&(n.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?n.credentials="include":r.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function e(r){if(r.ep)return;r.ep=!0;const n=d(r);fetch(r.href,n)}})();const y=`<header class="header">\r
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const n of r)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&e(i)}).observe(document,{childList:!0,subtree:!0});function d(r){const n={};return r.integrity&&(n.integrity=r.integrity),r.referrerPolicy&&(n.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?n.credentials="include":r.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function e(r){if(r.ep)return;r.ep=!0;const n=d(r);fetch(r.href,n)}})();const _=`<header class="header">\r
   <img src="assets/images/josuelogo.png" alt="logo" class="logo">\r
   <h1 class="title">Josué López Frontend DEV</h1>\r
   <button aria-label="activar modo oscuro" class="dark-mode-btn">\r
@@ -161,8 +161,12 @@
     <h2 class="card-title">Mis Proyectos</h2>\r
     <div class="project-container">\r
       <div class="project-item">\r
-        <img src="assets/images/git.png" alt="image" class="img-projects">\r
-        <p class="card__subtitle">Proyecto 1</p>  \r
+        <a href="https://josuedlb1982.github.io/blackjack-vite-github/" target="_blank">\r
+          <img src="assets/images/blackjack.png" alt="image" class="img-projects">\r
+        </a>\r
+        <a href="https://github.com/JosueDLB1982/blackjack-vite-github.git" target="_blank">\r
+          <p class="card__subtitle">Blackjack</p>\r
+        </a>\r
       </div>\r
       <div class="project-item">\r
         <img src="assets/images/git.png" alt="image" class="img-projects">\r
@@ -270,7 +274,7 @@
 </div>\r
 </section>\r
 <footer class="footer">\r
-  <div>\r
+  <div class="icons-containers">\r
     <a href="https://github.com/JosueDLB1982" target="_blank">\r
       <i class="fa-brands fa-github social-networks__icon"></i>\r
     </a>\r
@@ -288,4 +292,4 @@
     </a>\r
   </div>\r
   <p class="footer__text"><span>&copy; 2024 </span>Desarrollado por Josué López Frontend DEV</p>\r
-</footer>`,_=()=>{const o=window.matchMedia("(prefers-color-scheme: dark)"),a=r=>{document.documentElement.setAttribute("data-theme",r)};o.matches&&a("dark"),o.addEventListener("change",r=>{a(r.matches?"dark":"light")});const d=document.querySelector(".light-mode-btn"),e=document.querySelector(".dark-mode-btn");d.addEventListener("click",()=>{a("dark")}),e.addEventListener("click",()=>{a("light")})},p=document.createElement("a"),k=()=>{document.querySelector("#download-btn").addEventListener("click",()=>{setTimeout(()=>{p.href="./assets/documents/cv-enero-2024.pdf",p.download="Josue Lopez Frontend DEV",p.click()},3200)}),document.querySelectorAll(".button").forEach(e=>{let r=3e3,n=e.querySelector("svg"),i=new Proxy({y:null,smoothing:null},{set(s,t,l){return s[t]=l,s.y!==null&&s.smoothing!==null&&(n.innerHTML=d(s.y,s.smoothing,null)),!0},get(s,t){return s[t]}});e.style.setProperty("--duration",r),i.y=20,i.smoothing=0,e.addEventListener("click",s=>{e.classList.contains("loading")||(e.classList.add("loading"),gsap.to(i,{smoothing:.3,duration:r*.065/1e3}),gsap.to(i,{y:12,duration:r*.265/1e3,delay:r*.065/1e3,ease:Elastic.easeOut.config(1.12,.4)}),setTimeout(()=>{n.innerHTML=d(0,0,[[3,14],[8,19],[21,6]])},r/2))})});function a(e,r,n,i){let s=(c,u,b,w)=>{let m=u||c,g=b||c,f={length:Math.sqrt(Math.pow(g[0]-m[0],2)+Math.pow(g[1]-m[1],2)),angle:Math.atan2(g[1]-m[1],g[0]-m[0])},h=f.angle+(w?Math.PI:0),v=f.length*i;return[c[0]+Math.cos(h)*v,c[1]+Math.sin(h)*v]},t=s(n[r-1],n[r-2],e,!1),l=s(e,n[r-1],n[r+1],!0);return`C ${t[0]},${t[1]} ${l[0]},${l[1]} ${e[0]},${e[1]}`}function d(e,r,n){return`<path d="${(n||[[4,12],[12,e],[20,12]]).reduce((t,l,c,u)=>c===0?`M ${l[0]},${l[1]}`:`${t} ${a(l,c,u,r)}`,"")}" />`}},j=o=>{(()=>{const a=document.createElement("div");a.innerHTML=y,document.querySelector(o).append(a)})(),_(),k()};j("#app");
+</footer>`,y=()=>{const o=window.matchMedia("(prefers-color-scheme: dark)"),a=r=>{document.documentElement.setAttribute("data-theme",r)};o.matches&&a("dark"),o.addEventListener("change",r=>{a(r.matches?"dark":"light")});const d=document.querySelector(".light-mode-btn"),e=document.querySelector(".dark-mode-btn");d.addEventListener("click",()=>{a("dark")}),e.addEventListener("click",()=>{a("light")})},p=document.createElement("a"),k=()=>{document.querySelector("#download-btn").addEventListener("click",()=>{setTimeout(()=>{p.href="./assets/documents/cv-enero-2024.pdf",p.download="Josue Lopez Frontend DEV",p.click()},3200)}),document.querySelectorAll(".button").forEach(e=>{let r=3e3,n=e.querySelector("svg"),i=new Proxy({y:null,smoothing:null},{set(s,t,l){return s[t]=l,s.y!==null&&s.smoothing!==null&&(n.innerHTML=d(s.y,s.smoothing,null)),!0},get(s,t){return s[t]}});e.style.setProperty("--duration",r),i.y=20,i.smoothing=0,e.addEventListener("click",s=>{e.classList.contains("loading")||(e.classList.add("loading"),gsap.to(i,{smoothing:.3,duration:r*.065/1e3}),gsap.to(i,{y:12,duration:r*.265/1e3,delay:r*.065/1e3,ease:Elastic.easeOut.config(1.12,.4)}),setTimeout(()=>{n.innerHTML=d(0,0,[[3,14],[8,19],[21,6]])},r/2))})});function a(e,r,n,i){let s=(c,u,b,w)=>{let m=u||c,g=b||c,f={length:Math.sqrt(Math.pow(g[0]-m[0],2)+Math.pow(g[1]-m[1],2)),angle:Math.atan2(g[1]-m[1],g[0]-m[0])},h=f.angle+(w?Math.PI:0),v=f.length*i;return[c[0]+Math.cos(h)*v,c[1]+Math.sin(h)*v]},t=s(n[r-1],n[r-2],e,!1),l=s(e,n[r-1],n[r+1],!0);return`C ${t[0]},${t[1]} ${l[0]},${l[1]} ${e[0]},${e[1]}`}function d(e,r,n){return`<path d="${(n||[[4,12],[12,e],[20,12]]).reduce((t,l,c,u)=>c===0?`M ${l[0]},${l[1]}`:`${t} ${a(l,c,u,r)}`,"")}" />`}},j=o=>{(()=>{const a=document.createElement("div");a.innerHTML=_,document.querySelector(o).append(a)})(),y(),k()};j("#app");
