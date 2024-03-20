@@ -1,5 +1,6 @@
 import './css/normalize.css'
 import './style.css'
+import './css/cube.css'
 import './css/style-button.css'
 import { App } from './src/app.js'
 
