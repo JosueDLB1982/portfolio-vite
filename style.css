@@ -158,6 +158,12 @@ form {
   font-size: 4vw;
 }
 
+.prueba {
+  top : -190px;
+  opacity: 0;
+  display: none;
+}
+
 .checkbox:checked ~ .fi-ss-apps-add {
   display: none;
 }

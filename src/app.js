@@ -1,6 +1,7 @@
 import html from './app.html?raw'
 import { setUserTheme } from '../src/use-cases/changeColorThema'
 import { downloadCv } from './use-cases/download-cv'
+import { mobileMenu } from '../src/use-cases/mobile-menu'
 
 
 /**
@@ -16,4 +17,5 @@ export const App = (elementId) => {
     
     setUserTheme()
     downloadCv()
+    mobileMenu()
 }
