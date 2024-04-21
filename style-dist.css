@@ -329,7 +329,6 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* margin-top: 5px; */
   padding: 0 5px;
   border: 2px solid var(--color);
 }
